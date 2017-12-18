@@ -1,0 +1,157 @@
+/*general*/
+
+.final-grade {
+    background-color: #FFB6C1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 450px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+#number-1 { top: 200px; }
+#number-2 { top: 330px; }
+
+body {
+    background: url(back.jpg);
+    background-size: cover;
+    background-position: center; 
+    width:100%;    
+　　height:100%;
+}
+
+.wrapper {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.person-0-panel,
+.person-1-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+
+/*persons*/
+
+.person-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.person-grade {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;
+}
+
+.active { background-color: #f7f7f7; }
+.active .person-name { font-weight: 280; }
+
+.active .person-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -7px;
+    right: 10px;
+    
+}
+
+.person-current-box {
+    background-color: #DAA520;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.person-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.person-current-grade {
+    font-size: 30px;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+#new { top: 45px;}
+#try { top: 100px;}
+#hold { top: 155px;}
+
+.number {
+    background-color: white;
+    color: red;
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 65px;
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+#winner-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    top: 250px;
+}
+
+.winner { background-color: #f7f7f7; }
+.winner .person-name { font-weight: 300; color: #EB4D4D; }
