@@ -1,4 +1,4 @@
-## Guess-Number-Game-rule
+## Guess-Number-Game-Rule
 
 * The guess number game has two roles(Micheal and Jason).
 * A person can click ‘New game’ button at first in order to generate a goal number from 1 to 200 randomly. But, two people can’t see the goal number in this step.
